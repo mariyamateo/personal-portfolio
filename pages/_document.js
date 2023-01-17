@@ -23,7 +23,7 @@ export default class MyDocument extends Document {
           <link
             rel="shortcut icon"
             type="image/png"
-            href="/images/png/logo-main.png"
+            href="/images/favicon.jpg"
           />
         </Head>
         <body dir={dir} lang={locale}>

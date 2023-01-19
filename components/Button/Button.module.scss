@@ -1,0 +1,10 @@
+.layout {
+    @apply bg-[#7477FF] rounded px-4 py-2 w-fit;
+    // box-shadow: -3px 3px 0px #fff;
+
+    .name {
+        font-family: 'InterBold', 'sans-serif';
+        font-size: 18px;
+        line-height: 22px;
+    }
+}

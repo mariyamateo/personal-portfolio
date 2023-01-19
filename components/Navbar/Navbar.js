@@ -54,7 +54,7 @@ const Navbar = () => {
         })}
       >
         <div onClick={() => router.push("/")} className="cursor-pointer">
-          <span>Clarisse</span>
+          <h4 className="text-[#7477FF]">macky</h4>
         </div>
         <div className={styles.navbarMenu}>
           {NAVBAR_MENU.map((menu, key) => (
@@ -63,7 +63,7 @@ const Navbar = () => {
               className={styles.menu}
               onClick={() => onClickNav(menu.key)}
             >
-              <h2>{menu.name}</h2>
+              <h5>{menu.name}</h5>
             </button>
           ))}
         </div>

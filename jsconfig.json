@@ -3,6 +3,8 @@
     "baseUrl": ".",
     "paths": {
       "@/components/*": ["components/*"],
+      "@/constants": ["constants/index"],
+      "@/constants/*": ["constants/*"],
       "@/public/*": ["public/*"]
     }
   }

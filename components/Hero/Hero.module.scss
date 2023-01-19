@@ -1,0 +1,11 @@
+.layout {
+  @apply overflow-hidden h-screen flex items-center;
+  z-index: 1;
+
+  .heroLayout {
+    @apply flex flex-row justify-between items-center mx-28 w-full;
+    .hero {
+      @apply flex flex-col space-y-4;
+    }
+  }
+}

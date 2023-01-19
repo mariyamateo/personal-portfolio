@@ -1,0 +1,14 @@
+.layout {
+    @apply overflow-hidden h-screen flex items-center bg-[#1E293B];
+    z-index: 1;
+
+    .aboutLayout {
+        @apply flex flex-row justify-between items-center mx-28 w-full;
+        .about {
+            @apply flex flex-col w-1/3;
+            .title {
+                @apply border border-x-0 border-t-0 border-b-8 w-fit;
+            }
+        }
+    }
+}

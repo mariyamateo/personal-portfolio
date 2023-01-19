@@ -30,15 +30,15 @@ const Navbar = () => {
       navigate("/");
       setTimeout(() => {
         scroller.scrollTo(link, {
-          duration: 1000,
+          duration: 500,
           delay: 0,
           smooth: "linear",
-          offset: -20,
+          offset: 200,
         });
       }, 300);
     } else {
       scroller.scrollTo(link, {
-        duration: 1000,
+        duration: 500,
         delay: 0,
         smooth: "linear",
         offset: 0,

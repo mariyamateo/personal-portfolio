@@ -2,7 +2,7 @@
     @apply flex items-center justify-center fixed w-full z-50;
   }
   .navbarlayout {
-    @apply w-full px-4 py-2 my-8 mx-28 flex flex-row justify-between items-center z-50 bg-transparent rounded-lg;
+    @apply w-full py-8 px-28 flex flex-row justify-between items-center z-50 bg-transparent;
     box-shadow: 0px 8px 12px transparent;
     .navbarMenu {
       @apply flex flex-row space-x-9;
@@ -14,19 +14,16 @@
   }
   
   .navScrolled {
-    background-color: white !important;
+    background-color: #0F172A !important;
     animation: rtl 300ms ease-out forwards;
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.24);
   }
   
   @keyframes rtl {
     from {
       opacity: 0;
-      transform: translateY(5rem);
     }
     to {
       opacity: 1;
-      transform: translateY(0);
     }
   }
   

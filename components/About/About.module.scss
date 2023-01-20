@@ -1,14 +1,28 @@
 .layout {
-    @apply overflow-hidden h-screen flex items-center bg-[#1E293B];
+    @apply overflow-hidden bg-[#1E293B] w-screen;
     z-index: 1;
-
+    .mapImg {
+        @apply bg-[url("/images/svg/about.svg")] bg-fixed bg-no-repeat bg-right bg-contain;
+      }
     .aboutLayout {
-        @apply flex flex-row justify-between items-center mx-28 w-full;
+        @apply w-1/2 ml-32 mr-auto py-32;
         .about {
-            @apply flex flex-col w-1/3;
+            @apply flex flex-col;
             .title {
-                @apply border border-x-0 border-t-0 border-b-8 w-fit;
+                @apply border border-x-0 border-t-0 border-b-8 w-fit mb-8;
             }
+        }
+        .lists {
+            @apply flex flex-col space-y-4 pb-3;
+            .rod {
+                @apply w-5;
+            }
+            li {
+                @apply flex flex-row space-x-2;
+            }
+        }
+        .techs {
+            @apply pt-12;
         }
     }
 }

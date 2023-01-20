@@ -1,3 +1,4 @@
+import { ABOUT_LIST } from "@/constants/about";
 import React from "react";
 import { Element } from "react-scroll";
 import styles from "./About.module.scss";
@@ -5,29 +6,30 @@ import styles from "./About.module.scss";
 const About = () => {
   return (
     <Element className={styles.layout} name="about">
-      <div className={styles.aboutLayout}>
-        <div className={styles.about}>
-          <div className={styles.title}>
-            <h2>About Me</h2>
+      <div className={styles.mapImg}>
+        <div className={styles.aboutLayout}>
+          <div className={styles.about}>
+            <div className={styles.title}>
+              <h2>About Me</h2>
+            </div>
+            <ul className={styles.lists}>
+              {ABOUT_LIST.map((about, index) => (
+                <li key={about.id}>
+                  <img
+                    className={styles.rod}
+                    src={"/images/svg/rod.svg"}
+                    alt="check"
+                    draggable={false}
+                  />
+                  <h6>{about.about}</h6>
+                </li>
+              ))}
+            </ul>
+            <div className={styles.techs}>
+              <h3>Technologies I’ve worked with:</h3>
+              <h6></h6>
+            </div>
           </div>
-          <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            tristique enim ac felis cursus, ut cursus ligula cursus. Duis varius
-            nisi ut nisl hendrerit, eget venenatis nisi luctus. Nunc viverra
-            tempus eleifend. Sed posuere augue non nulla consectetur hendrerit.
-            In molestie urna in viverra pulvinar. Aenean facilisis id massa
-            pretium lobortis
-          </h6>
-          <h6>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            tristique enim ac felis cursus, ut cursus ligula cursus. Duis varius
-            nisi ut nisl hendrerit, eget venenatis nisi luctus. Nunc viverra
-            tempus eleifend. Sed posuere augue non nulla consectetur hendrerit.
-            In molestie urna in viverra pulvinar. Aenean facilisis id massa
-            pretium lobortis
-          </h6>
-          <h3>Technologies I’ve worked with:</h3>
-          <h6></h6>
         </div>
       </div>
     </Element>

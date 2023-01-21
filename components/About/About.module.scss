@@ -2,7 +2,7 @@
     @apply overflow-hidden bg-[#1E293B] w-screen;
     z-index: 1;
     .mapImg {
-        @apply bg-[url("/images/svg/about.svg")] bg-fixed bg-no-repeat bg-right bg-contain;
+        @apply bg-[url("/images/svg/about.svg")] bg-fixed bg-no-repeat bg-right-bottom bg-contain;
       }
     .aboutLayout {
         @apply w-1/2 ml-32 mr-auto py-32;
@@ -22,10 +22,10 @@
             }
         }
         .techs {
-            @apply pt-12;
+            @apply pt-32;
 
             .skills {
-                @apply flex flex-col space-y-2 w-2/3 pt-4;
+                @apply flex flex-col space-y-4 w-2/3 pt-4;
            
             }
         }

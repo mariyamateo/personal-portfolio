@@ -54,7 +54,7 @@ a {
 }
 
 h1 {
-  font-family: 'PacificoRegular', 'sans-serif';
+  font-family: 'PoppinsBold', 'sans-serif';
   font-size: 75px;
   line-height: 95px;
 }
@@ -80,6 +80,6 @@ h5 {
 }
 h6 {
   font-family: 'Poppins';
-  font-size: 16px;
-  line-height: 36px;
+  font-size: 18px;
+  line-height: 22px;  
 }

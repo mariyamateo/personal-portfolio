@@ -2,7 +2,7 @@
     @apply flex items-center justify-center fixed w-full z-50;
   }
   .navbarlayout {
-    @apply w-full py-8 px-28 flex flex-row justify-between items-center z-50 bg-transparent;
+    @apply w-full py-8 px-28 flex flex-row justify-between items-center z-50 bg-[#0F172A];
     box-shadow: 0px 8px 12px transparent;
     .navbarMenu {
       @apply flex flex-row space-x-9;

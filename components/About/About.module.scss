@@ -9,7 +9,7 @@
         .about {
             @apply flex flex-col;
             .title {
-                @apply border border-x-0 border-t-0 border-b-8 w-fit mb-8;
+                @apply border border-x-0 border-t-0 border-b-8 border-[#7477FF] w-fit mb-8;
             }
         }
         .lists {
@@ -23,6 +23,11 @@
         }
         .techs {
             @apply pt-12;
+
+            .skills {
+                @apply flex flex-col space-y-2 w-2/3 pt-4;
+           
+            }
         }
     }
 }

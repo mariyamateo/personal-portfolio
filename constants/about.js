@@ -1,41 +1,56 @@
 export const ABOUT_LIST = [
   {
     id: 0,
-    about: "1 year of experience in front-end development",
+    about: "Proficient in HTML, CSS, and JavaScript",
   },
   {
     id: 1,
-    about: "Solid understanding of HTML, CSS, and JavaScript",
+    about: "Experience with modern front-end frameworks such as React or Vue.js",
   },
   {
     id: 2,
-    about: "Experience working with popular front-end frameworks such as React",
+    about: "Familiarity with front-end build tools",
   },
   {
     id: 3,
-    about: "Strong attention to detail and problem-solving skills",
+    about: "Knowledge of responsive web design and mobile optimization",
   },
   {
     id: 4,
-    about: "Ability to work well in a team",
+    about:
+      "Familiarity with cross-browser compatibility issues and ways to work around them",
   },
   {
     id: 5,
-    about: "Experience in building responsive and user-friendly interfaces",
+    about: "Experience with version control systems such as Git",
   },
   {
     id: 6,
-    about: "Passion for creating visually appealing and engaging websites",
+    about: "Strong understanding of web performance optimization techniques",
   },
   {
     id: 7,
-    about:
-      "Motivated to continue growing skills and experience in a professional setting",
+    about: "Experience with CSS preprocessors such as SASS or LESS",
   },
   {
     id: 8,
-    about:
-      "Interested in contributing to the success of a front-end development team",
+    about: "Experience with debugging and browser developer tools",
+  },
+  {
+    id: 9,
+    about: "Good understanding of SEO principles",
+  },
+  {
+    id: 10,
+    about: "Experience with accessibility and web standards",
+  },
+  {
+    id: 11,
+    about: "Good understanding of web security best practices",
+  },
+  {
+    id: 12,
+    about: "Familiarity with Agile development methodologies",
   },
 ];
 

@@ -11,7 +11,7 @@ const About = () => {
         <div className={styles.aboutLayout}>
           <div className={styles.about}>
             <div className={styles.title}>
-              <h2>About Me</h2>
+              <h2>Skills and Responsibilities</h2>
             </div>
             <ul className={styles.lists}>
               {ABOUT_LIST.map((about) => (
@@ -27,7 +27,9 @@ const About = () => {
               ))}
             </ul>
             <div className={styles.techs}>
-              <h3>Technologies I’ve worked with:</h3>
+            <div className={styles.title}>
+              <h2>Technologies I’ve worked with:</h2>
+            </div>
               <div className={styles.skills}>
                 {SKILLS_LIST.map((skills) => (
                   <div key={skills.id}>

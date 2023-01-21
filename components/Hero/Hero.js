@@ -9,14 +9,13 @@ const Hero = () => {
         <div className={styles.hero}>
           <h1 className="pt-4">
             Hi,
-            <br />I am <span className="text-[#7477FF]">C</span>larisse, <br />
-            Web developer
+            <br />I am{" "}
+            <span className="text-[#7477FF] font-[PacificoRegular]">C</span>
+            <span className="font-[PacificoRegular]">larisse</span>, <br />
+            Software Engineer
           </h1>
-          <h6>Frontend Developer, Proficient in ReactJS</h6>
-          <Button label={"See Projects"} />
-        </div>
-        <div>
-          <img src="/images/svg/hero.svg" alt="developer" draggable={false} />
+          <h3 className="pb-8">Frontend Developer, Proficient in ReactJS</h3>
+          <Button label={"Get in touch"} />
         </div>
       </div>
     </div>

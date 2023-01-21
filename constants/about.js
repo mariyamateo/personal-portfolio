@@ -38,3 +38,54 @@ export const ABOUT_LIST = [
       "Interested in contributing to the success of a front-end development team",
   },
 ];
+
+export const SKILLS_LIST = [
+  {
+    id: 0,
+    name: "Javascript",
+    image: "/images/svg/js.svg",
+    rate: 10,
+  },
+  {
+    id: 1,
+    name: "Typescript",
+    image: "/images/svg/ts.svg",
+    rate: 10,
+  },
+  {
+    id: 2,
+    name: "HTML",
+    image: "/images/svg/html.svg",
+    rate: 10,
+  },
+  {
+    id: 3,
+    name: "CSS",
+    image: "/images/svg/css.svg",
+    rate: 10,
+  },
+  {
+    id: 4,
+    name: "Sass",
+    image: "/images/svg/sass.svg",
+    rate: 9,
+  },
+  {
+    id: 5,
+    name: "React",
+    image: "/images/svg/react.svg",
+    rate: 9,
+  },
+  {
+    id: 6,
+    name: "Node",
+    image: "/images/svg/node.svg",
+    rate: 8,
+  },
+  {
+    id: 7,
+    name: "Web3",
+    image: "/images/svg/web3.svg",
+    rate: 8,
+  },
+];

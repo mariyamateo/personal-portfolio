@@ -1,6 +1,7 @@
-import { ABOUT_LIST } from "@/constants/about";
+import { ABOUT_LIST, SKILLS_LIST } from "@/constants/about";
 import React from "react";
 import { Element } from "react-scroll";
+import { SimpleProgressBar } from "../ProgressBar";
 import styles from "./About.module.scss";
 
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
               <h2>About Me</h2>
             </div>
             <ul className={styles.lists}>
-              {ABOUT_LIST.map((about, index) => (
+              {ABOUT_LIST.map((about) => (
                 <li key={about.id}>
                   <img
                     className={styles.rod}
@@ -27,7 +28,14 @@ const About = () => {
             </ul>
             <div className={styles.techs}>
               <h3>Technologies I’ve worked with:</h3>
-              <h6></h6>
+              <div className={styles.skills}>
+                {SKILLS_LIST.map((skills) => (
+                  <div key={skills.id}>
+                    <h6>{skills.name}</h6>
+                    <SimpleProgressBar rate={skills.rate} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

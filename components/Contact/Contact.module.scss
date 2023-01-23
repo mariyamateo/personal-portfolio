@@ -1,5 +1,5 @@
 .layout {
-    @apply bg-[url("/images/contact.jpg")] bg-fixed bg-no-repeat bg-center bg-cover;
+    @apply bg-[url("/images/contact.jpg")] bg-fixed bg-no-repeat bg-bottom bg-cover;
 
     .contactLayout {
         @apply bg-[#1E293B] opacity-90 py-32 flex flex-col items-center justify-center text-center h-screen;
@@ -12,6 +12,16 @@
         @apply flex flex-col space-y-10 mt-16;
         .button {
             @apply flex flex-row items-center justify-center space-x-2 w-full rounded-full px-6 py-2 bg-white text-black;
+        }
+    }
+}
+.footer {
+    @apply px-5 py-3;
+
+    .disclaimerButton {
+        @apply cursor-pointer;
+        &:hover {
+            @apply underline;
         }
     }
 }

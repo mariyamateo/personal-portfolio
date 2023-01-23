@@ -83,3 +83,8 @@ h6 {
   font-size: 18px;
   line-height: 22px;  
 }
+p {
+  font-family: 'PoppinsRegular', 'sans-serif';
+  font-size: 16px;
+  line-height: 20px;  
+}

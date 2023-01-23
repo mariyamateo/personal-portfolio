@@ -18,7 +18,9 @@ const Hero = () => {
           </h1>
           <h2>Software Engineer</h2>
           <h3 className="pb-8">Frontend Developer, Proficient in ReactJS</h3>
-          <Button label={"Get in touch"} />
+          <a href="mailto:ma.clarissepmateo@gmail.com">
+            <Button label={"Get in touch"} />
+          </a>
         </div>
       </div>
     </div>

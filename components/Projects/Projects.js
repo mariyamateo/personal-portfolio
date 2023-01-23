@@ -2,7 +2,6 @@ import { PROJECTS_LIST, WORK_LIST } from "@/constants/about";
 import React from "react";
 import { Element } from "react-scroll";
 import styles from "./Projects.module.scss";
-import cx from "classnames";
 
 const Projects = () => {
   return (

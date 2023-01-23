@@ -11,7 +11,7 @@ const About = () => {
         <div className={styles.aboutLayout}>
           <div className={styles.about}>
             <div className={styles.title}>
-              <h2>Skills and Responsibilities</h2>
+              <h2>Skills and Responsibilities:</h2>
             </div>
             <ul className={styles.lists}>
               {ABOUT_LIST.map((about) => (

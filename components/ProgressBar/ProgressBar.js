@@ -6,7 +6,7 @@ const SimpleProgressBar = ({rate}) => {
     <ProgressBar
       isLabelVisible={false}
       completed={rate}
-      maxCompleted={10}
+      maxCompleted={100}
       bgColor="linear-gradient(90deg, #7477FF 0%, #956AA6 100%)"
       baseBgColor="#EAEAFF"
       height="8px"

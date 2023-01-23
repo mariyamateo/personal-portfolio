@@ -27,12 +27,12 @@ const About = () => {
               ))}
             </ul>
             <div className={styles.techs}>
-            <div className={styles.title}>
-              <h2>Technologies I’ve worked with:</h2>
-            </div>
+              <div className={styles.title}>
+                <h2>Technologies I’ve worked with:</h2>
+              </div>
               <div className={styles.skills}>
                 {SKILLS_LIST.map((skills) => (
-                  <div key={skills.id}>
+                  <div key={skills.id} className="flex flex-col space-y-2">
                     <h6>{skills.name}</h6>
                     <SimpleProgressBar rate={skills.rate} />
                   </div>

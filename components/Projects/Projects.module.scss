@@ -1,0 +1,30 @@
+.layout {
+    @apply overflow-hidden bg-[#0F172A] w-screen;
+    z-index: 1;
+   .projlayout {
+        @apply mx-32  py-32;
+
+       .title {
+           @apply border border-x-0 border-t-0 border-b-8 border-[#7477FF] w-full mb-8;
+        }
+        .box {
+            @apply w-1/2 flex flex-col items-center mx-auto space-y-6;
+        }
+        .work {
+            @apply bg-[#1E293B] w-fit p-8 rounded-xl transition-all ease-linear duration-200 w-full mt-8 mb-32 space-y-1;
+            transform: scale(1);
+            &:hover {
+                @apply transition-all ease-linear duration-200;
+                transform: scale(1.1);
+            }
+        }
+        .project {
+            @apply bg-[#1E293B] w-fit p-8 rounded-xl transition-all ease-linear duration-200 w-full mt-8 space-y-1 cursor-pointer;
+            transform: scale(1);
+            &:hover {
+                @apply transition-all ease-linear duration-200;
+                transform: scale(1.1);
+            }
+        }
+    }
+}

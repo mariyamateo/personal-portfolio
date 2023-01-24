@@ -55,36 +55,66 @@ a {
 
 h1 {
   font-family: 'PoppinsBold', 'sans-serif';
-  font-size: 75px;
-  line-height: 95px;
+  font-size: 30px;
+  line-height: 50px;
 }
 h2 {
   font-family: 'PoppinsBold', 'sans-serif';
-  font-size: 35px;
-  line-height: 52px;
+  font-size: 25px;
+  line-height: 42px;
 }
 h3 {
   font-family: 'PoppinsBold', 'sans-serif';
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 15px;
+  line-height: 17px;
 }
 h4 {
   font-family: 'InterBold', 'sans-serif';
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 19px;
 }
 h5 {
   font-family: 'InterMedium', 'sans-serif';
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 19px;
 }
 h6 {
   font-family: 'PoppinsRegular', 'sans-serif';
-  font-size: 18px;
-  line-height: 22px;  
+  font-size: 13px;
+  line-height: 17px;  
 }
 p {
   font-family: 'PoppinsRegular', 'sans-serif';
-  font-size: 16px;
-  line-height: 20px;  
+  font-size: 11px;
+  line-height: 15px;  
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 75px;
+    line-height: 95px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 52px;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h6 {
+    font-size: 18px;
+    line-height: 22px;  
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;  
+  }
 }

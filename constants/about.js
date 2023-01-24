@@ -57,58 +57,49 @@ export const ABOUT_LIST = [
 
 export const SKILLS_LIST = [
   {
-    id: 0,
-    name: "Javascript",
-    image: "/images/svg/js.svg",
-    rate: 99,
-  },
-  {
-    id: 1,
-    name: "Typescript",
-    image: "/images/svg/ts.svg",
-    rate: 98,
-  },
-  {
     id: 2,
     name: "HTML",
     image: "/images/svg/html.svg",
-    rate: 100,
   },
   {
     id: 3,
     name: "CSS",
     image: "/images/svg/css.svg",
-    rate: 100,
   },
   {
     id: 4,
     name: "Sass",
     image: "/images/svg/sass.svg",
-    rate: 99,
+  },
+  {
+    id: 0,
+    name: "Javascript",
+    image: "/images/svg/js.svg",
+  },
+  {
+    id: 1,
+    name: "Typescript",
+    image: "/images/svg/ts.svg",
   },
   {
     id: 5,
     name: "ReactJS",
     image: "/images/svg/react.svg",
-    rate: 99,
   },
   {
     id: 6,
     name: "VueJS",
-    image: "/images/svg/react.svg",
-    rate: 98,
+    image: "/images/svg/vue.svg",
   },
   {
     id: 7,
     name: "Node",
     image: "/images/svg/node.svg",
-    rate: 98,
   },
   {
     id: 8,
     name: "Web3",
     image: "/images/svg/web3.svg",
-    rate: 98,
   },
 ];
 

@@ -16,7 +16,7 @@ const Projects = () => {
               <h6>{work.date}</h6>
               <h2 className="text-[#7477FF]">{work.role}</h2>
               <h5>{work.company}</h5>
-              <div className="flex flex-col space-y-2 pt-4">
+              <div className="flex flex-col space-y-4 pt-4">
                 <h6>• {work.work1}</h6>
                 <h6>• {work.work2}</h6>
                 <h6>• {work.work3}</h6>

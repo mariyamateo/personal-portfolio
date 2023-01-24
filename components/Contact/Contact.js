@@ -10,7 +10,7 @@ const Contact = ({ onClick }) => {
           {/* <h1>Get in touch</h1> */}
           <h2 className="w-2/3">
             Are you a business seeking for a web presence or an employer looking
-            to hire? You can get in touch with me here.
+            to hire?
           </h2>
           <div className={styles.buttons}>
             <a href="mailto:ma.clarissepmateo@gmail.com">
@@ -41,15 +41,15 @@ const Contact = ({ onClick }) => {
               <h3>Connect via LinkedIn</h3>
             </button>
           </div>
+          <div className={styles.footer}>
+            <p>
+              Copyright © 2023 Ma. Clarisse Mateo •{" "}
+              <span className={styles.disclaimerButton} onClick={onClick}>
+                Disclaimer
+              </span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div className={styles.footer}>
-        <p>
-          Copyright © 2023 Ma. Clarisse Mateo •{" "}
-          <span className={styles.disclaimerButton} onClick={onClick}>
-            Disclaimer
-          </span>
-        </p>
       </div>
     </>
   );

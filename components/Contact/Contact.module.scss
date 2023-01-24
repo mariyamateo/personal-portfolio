@@ -1,27 +1,33 @@
 .layout {
-    @apply bg-[url("/images/contact.jpg")] bg-fixed bg-no-repeat bg-bottom bg-cover;
+    @apply bg-[url("/images/contact.jpg")] bg-fixed bg-no-repeat bg-bottom bg-cover relative;
 
     .contactLayout {
-        @apply bg-[#1E293B] opacity-90 py-32 flex flex-col items-center justify-center text-center h-screen;
+        @apply bg-[#1E293B] opacity-90 py-4 flex flex-col items-center justify-start text-center h-screen;
+        @media (min-width: 728px) {
+            @apply py-32 justify-center;
+        }
 
         .title {
             @apply border border-x-0 border-t-0 border-b-8 border-[#7477FF] w-fit mb-8;
         }
     }
     .buttons {
-        @apply flex flex-col space-y-10 mt-16;
+        @apply flex flex-col space-y-4 mt-8;
+        @media (min-width: 728px) {
+            @apply space-y-10 mt-16;
+        }
         .button {
             @apply flex flex-row items-center justify-center space-x-2 w-full rounded-full px-6 py-2 bg-white text-black;
         }
     }
 }
 .footer {
-    @apply px-5 py-3;
+    @apply px-5 py-3 absolute bottom-0 left-0;
 
     .disclaimerButton {
         @apply cursor-pointer;
         &:hover {
-            @apply underline;
+            @apply text-slate-300;
         }
     }
 }

@@ -7,8 +7,9 @@ const Button = ({ label, disabled, hand }) => {
       <p className={styles.name}>{label}</p>
       <img
         hand={hand}
-        src="/images/svg/hand.svg"
+        src="/images/svg/soso.png"
         alt="get-in-touch"
+        className="h-7"
         draggable={false}
       />
     </button>

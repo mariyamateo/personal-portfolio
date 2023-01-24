@@ -1,2 +1,3 @@
 import Contact from "./Contact";
-export { Contact };
+import DisClaimer from "./DisClaimer";
+export { Contact, DisClaimer };

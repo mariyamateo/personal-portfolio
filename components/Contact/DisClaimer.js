@@ -1,10 +1,27 @@
 import React from "react";
+import styles from "./Contact.module.scss";
 
-const DisClaimer = () => {
+const DisClaimer = ({ show, close }) => {
   return (
-    <div>
-      <div>DisClaimer</div>
-    </div>
+    <>
+      {show && (
+        <div className={styles.disclaimer}>
+          <h6 className={styles.close} onClick={close}>
+            CLOSE
+          </h6>
+          <div className={styles.content}>
+            <h4>CONTENT DISCLAIMER</h4>
+            <div className={styles.caption}>
+              Developer represents and warrants that developer has the
+              knowledge, skill and experience necessary to produce the works.
+              Projects are intellectual property of each client or employer.
+              This site was created to showcase the skills, trade, profession
+              and expertise of the developer.
+            </div>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

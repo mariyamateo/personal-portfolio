@@ -16,7 +16,12 @@ const Projects = () => {
               <h6>{work.date}</h6>
               <h2 className="text-[#7477FF]">{work.role}</h2>
               <h5>{work.company}</h5>
-              <h6>{work.work}</h6>
+              <div className="flex flex-col space-y-2 pt-4">
+                <h6>• {work.work1}</h6>
+                <h6>• {work.work2}</h6>
+                <h6>• {work.work3}</h6>
+                <h6>• {work.work4}</h6>
+              </div>
             </div>
           ))}
         </div>
@@ -37,8 +42,8 @@ const Projects = () => {
                 className="pl-4 pt-12 pb-4"
               />
               <h2 className="text-[#7477FF]">{work.project}</h2>
-              <h5 className="italic">{work.role}</h5>
               <h6>{work.description}</h6>
+              <h5 className="italic pt-3">{work.role}</h5>
             </div>
           ))}
         </div>

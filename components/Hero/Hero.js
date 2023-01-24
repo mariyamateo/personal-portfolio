@@ -25,6 +25,15 @@ const Hero = () => {
           </a>
         </div>
       </div>
+      <div
+        className={styles.git}
+        onClick={() =>
+        window.open("https://github.com/mariyamateo", "_blank")
+        }
+      >
+        <img src="/images/svg/github.svg" alt="github" draggable={false} />
+        <p>GitHub</p>
+      </div>
     </div>
   );
 };

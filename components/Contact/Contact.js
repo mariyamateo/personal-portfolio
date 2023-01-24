@@ -10,7 +10,7 @@ const Contact = ({ onClick }) => {
           {/* <h1>Get in touch</h1> */}
           <h2 className="w-2/3">
             Are you a business seeking for a web presence or an employer looking
-            to hire? You can get in touch with me here.
+            to hire?
           </h2>
           <div className={styles.buttons}>
             <a href="mailto:ma.clarissepmateo@gmail.com">

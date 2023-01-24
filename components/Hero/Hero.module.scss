@@ -1,10 +1,25 @@
 .layout {
-  @apply overflow-hidden h-screen flex justify-center items-center drop-shadow-md;
+  @apply overflow-hidden h-screen flex justify-center items-center drop-shadow-md relative;
   z-index: 1;
   box-shadow: 0 0 10px 20px #0F172A;
 
+  .git {
+    @apply absolute bottom-16 left-4 flex flex-row items-center space-x-2 text-slate-300 cursor-pointer;
+    &:hover {
+      @apply text-slate-100;
+    }
+    @media (min-width: 1024px) {
+      @apply absolute bottom-8 left-28;
+    }
+  }
+
   .heroLayout {
-    @apply flex flex-row justify-between items-center mx-28 w-full;
+    @apply flex flex-row justify-between items-center mx-4 w-full;
+
+    @media (min-width: 1024px) {
+      @apply mx-28
+    }
+
     .hero {
       @apply flex flex-col space-y-4;
 
@@ -24,8 +39,11 @@
         color: transparent;
       }
       .animatedname {
-        height: 80px;
+        height: 30px;
         overflow:hidden;
+        @media (min-width: 1024px) {
+          height: 80px;
+        }
       }
       .animatedname > div > div {
         margin-bottom: 2.81rem;
@@ -33,19 +51,32 @@
       }
       
       .animatedname div:first-child {
-        animation: text-animation 8s infinite;
+        animation: text-animation 3s infinite;
+        @media (min-width: 1024px) {
+          animation: text-animation 8s infinite;
+        }
       }
       @keyframes text-animation {
-        0% {margin-top: 0;}
-        10% {margin-top: 0;}
-        20% {margin-top: -7rem;}
-        30% {margin-top: -7rem;}
-        40% {margin-top: -12.8rem;}
-        60% {margin-top: -12.8rem;}
-        70% {margin-top: -7rem;}
-        80% {margin-top: -7rem;}
-        90% {margin-top: 0;}
-        100% {margin-top: 0;}
+        0% {margin-top: -0.5rem;}
+        20% {margin-top: -0.5rem;}
+        40% {margin-top: -4rem;}
+        60% {margin-top: -4rem;}
+        80% {margin-top: -0.5rem;}
+        100% {margin-top: -0.5rem;}
+      }
+      @media (min-width: 1024px) {
+        @keyframes text-animation {
+          0% {margin-top: 0;}
+          10% {margin-top: 0;}
+          20% {margin-top: -7rem;}
+          30% {margin-top: -7rem;}
+          40% {margin-top: -12.8rem;}
+          60% {margin-top: -12.8rem;}
+          70% {margin-top: -7rem;}
+          80% {margin-top: -7rem;}
+          90% {margin-top: 0;}
+          100% {margin-top: 0;}
+        }
       }
       
     }

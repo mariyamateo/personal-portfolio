@@ -2,14 +2,22 @@
     @apply overflow-hidden bg-[#0F172A] w-screen;
     z-index: 1;
     .mapImg {
-        @apply bg-[url("/images/svg/about.svg")] bg-fixed bg-no-repeat bg-right-bottom bg-contain;
+        @media (min-width: 1024px) {
+            @apply bg-[url("/images/svg/about.svg")] bg-fixed bg-no-repeat bg-right bg-contain;
+        }
       }
     .aboutLayout {
-        @apply w-2/5 ml-32 mr-auto py-32;
+        
         .about {
-            @apply flex flex-col;
+            @apply flex flex-col bg-[#0F172A] w-full px-4 py-4;
             .title {
                 @apply border border-x-0 border-t-0 border-b-8 border-[#7477FF] w-fit mb-8;
+            }
+            @media (min-width: 728px) {
+                @apply px-16;
+            }
+            @media (min-width: 1024px) {
+                @apply w-2/5 ml-32 mr-auto py-32 pl-0 pr-8;
             }
         }
         .lists {
@@ -22,17 +30,27 @@
             }
         }
         .techs {
-            @apply pt-32;
+            @apply pt-16;
+            @media (min-width: 1024px) {
+                @apply pt-32;
+            }
 
             .skills {
-                @apply flex flex-row flex-wrap pt-4 -ml-4;
+                @apply flex flex-row flex-wrap justify-center pt-4 ml-0;
+                @media (min-width: 1024px) {
+                    @apply -ml-4;
+                }
             }
             .box {
-                @apply bg-[#1E293B] p-8 m-4 rounded-xl transition-all ease-linear duration-200 h-fit w-fit space-y-1;
+                @apply bg-[#1E293B] p-6 m-2 rounded-xl transition-all ease-linear duration-200 h-fit w-fit space-y-1;
                 transform: scale(1);
                 &:hover {
                     @apply transition-all ease-linear duration-200;
                     transform: scale(1.1);
+                }
+
+                @media (min-width: 1024px) {
+                    @apply p-8 m-4;
                 }
             }
         }

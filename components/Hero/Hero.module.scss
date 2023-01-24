@@ -1,11 +1,18 @@
 .layout {
-  @apply overflow-hidden h-screen flex items-center;
+  @apply overflow-hidden h-screen flex justify-center items-center;
   z-index: 1;
 
   .heroLayout {
     @apply flex flex-row justify-between items-center mx-28 w-full;
     .hero {
       @apply flex flex-col space-y-4;
+
+      .name {
+        font-size: 72px;
+        background-image: linear-gradient(60deg, #7477FF, #fff, #7477FF,#fff);
+        background-clip: text;
+        color: transparent;
+      }
     }
   }
 }

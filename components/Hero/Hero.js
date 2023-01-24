@@ -9,9 +9,13 @@ const Hero = () => {
         <div className={styles.hero}>
           <h1 className="pt-4">
             Hello, I'm <br />
-            <span className={styles.name}>Ma. Clarisse Mateo</span>
+            <section className={styles.animatedname}>
+              <div className={styles.name}>Ma. Clarisse Mateo</div>
+              <div className={styles.work}>Frontend Developer</div>
+              <div className={styles.work2}>Ma. Clarisse Mateo</div>
+            </section>
           </h1>
-          <h2>Software Engineer</h2>
+          {/* <h2>Software Engineer</h2> */}
           <h5 className="pb-8">
             Based out Manila, PH. Specialized in building web and mobile
             applications.

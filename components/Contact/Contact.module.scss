@@ -1,5 +1,5 @@
 .layout {
-    @apply bg-[url("/images/contact.jpg")] bg-fixed bg-no-repeat bg-bottom bg-cover;
+    @apply bg-[url("/images/contact.jpg")] bg-fixed bg-no-repeat bg-bottom bg-cover relative;
 
     .contactLayout {
         @apply bg-[#1E293B] opacity-90 py-32 flex flex-col items-center justify-center text-center h-screen;
@@ -16,12 +16,12 @@
     }
 }
 .footer {
-    @apply px-5 py-3;
+    @apply px-5 py-3 absolute bottom-0 left-0;
 
     .disclaimerButton {
         @apply cursor-pointer;
         &:hover {
-            @apply underline;
+            @apply text-slate-300;
         }
     }
 }

@@ -41,15 +41,15 @@ const Contact = ({ onClick }) => {
               <h3>Connect via LinkedIn</h3>
             </button>
           </div>
+          <div className={styles.footer}>
+            <p>
+              Copyright © 2023 Ma. Clarisse Mateo •{" "}
+              <span className={styles.disclaimerButton} onClick={onClick}>
+                Disclaimer
+              </span>
+            </p>
+          </div>
         </div>
-      </div>
-      <div className={styles.footer}>
-        <p>
-          Copyright © 2023 Ma. Clarisse Mateo •{" "}
-          <span className={styles.disclaimerButton} onClick={onClick}>
-            Disclaimer
-          </span>
-        </p>
       </div>
     </>
   );

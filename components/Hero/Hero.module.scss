@@ -1,6 +1,8 @@
 .layout {
-  @apply overflow-hidden h-screen flex justify-center items-center;
+  @apply overflow-hidden h-screen flex justify-center items-center drop-shadow-md;
   z-index: 1;
+  border: 10px solid #0F172A;
+  box-shadow: 0 5px 5px 5px #0F172A;
 
   .heroLayout {
     @apply flex flex-row justify-between items-center mx-28 w-full;
@@ -8,11 +10,45 @@
       @apply flex flex-col space-y-4;
 
       .name {
-        font-size: 72px;
         background-image: linear-gradient(60deg, #7477FF, #fff, #7477FF,#fff);
         background-clip: text;
         color: transparent;
       }
+      .work {
+        background-image: linear-gradient(60deg, #fff, #7477FF,);
+        background-clip: text;
+        color: transparent;
+      }
+      .work2 {
+        background-image: linear-gradient(60deg, #fff, #7477FF, #fff, #7477FF,);
+        background-clip: text;
+        color: transparent;
+      }
+      .animatedname {
+        height: 80px;
+        overflow:hidden;
+      }
+      .animatedname > div > div {
+        margin-bottom: 2.81rem;
+        display:inline-block;
+      }
+      
+      .animatedname div:first-child {
+        animation: text-animation 8s infinite;
+      }
+      @keyframes text-animation {
+        0% {margin-top: 0;}
+        10% {margin-top: 0;}
+        20% {margin-top: -7rem;}
+        30% {margin-top: -7rem;}
+        40% {margin-top: -12.8rem;}
+        60% {margin-top: -12.8rem;}
+        70% {margin-top: -7rem;}
+        80% {margin-top: -7rem;}
+        90% {margin-top: 0;}
+        100% {margin-top: 0;}
+      }
+      
     }
   }
 }

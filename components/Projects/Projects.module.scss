@@ -1,8 +1,10 @@
 .layout {
     @apply overflow-hidden bg-[#0F172A] w-screen;
+    border: 10px solid #0F172A;
+    box-shadow: 0 5px 5px 15px #0F172A;
     z-index: 1;
    .projlayout {
-        @apply mx-32  py-32;
+        @apply mx-32 pt-32 pb-52;
 
        .title {
            @apply border border-x-0 border-t-0 border-b-8 border-[#7477FF] w-full mb-8;

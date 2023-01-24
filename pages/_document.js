@@ -20,6 +20,7 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Ma. Clarisse Mateo | Software Engineer"
           />
+          <meta property="og:image" content="/images/contact.jpg" />
           <link
             rel="shortcut icon"
             type="image/png"

@@ -1,14 +1,11 @@
 .layout {
     @apply overflow-hidden bg-[#0F172A] w-screen;
-    box-shadow: 0 0 10px 20px #0F172A;
     z-index: 1;
    .projlayout {
-        @apply mx-4 pt-16 pb-52;
-        @media (min-width: 728px) {
-            @apply mx-16;
-        }
+        @apply pt-16 pb-52;
+       
         @media (min-width: 1024px) {
-            @apply mx-32 pt-32;
+            @apply pt-32;
         }
 
        .title {

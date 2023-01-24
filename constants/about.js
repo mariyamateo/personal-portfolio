@@ -1,14 +1,5 @@
 export const ABOUT_LIST = [
   {
-    id: 0,
-    about: "Proficient in HTML, CSS, and JavaScript",
-  },
-  {
-    id: 1,
-    about:
-      "Experience with modern front-end frameworks such as React or Vue.js",
-  },
-  {
     id: 2,
     about: "Familiarity with front-end build tools",
   },
@@ -28,10 +19,6 @@ export const ABOUT_LIST = [
   {
     id: 6,
     about: "Strong understanding of web performance optimization techniques",
-  },
-  {
-    id: 7,
-    about: "Experience with CSS preprocessors such as SASS or LESS",
   },
   {
     id: 8,

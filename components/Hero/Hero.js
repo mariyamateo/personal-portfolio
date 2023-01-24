@@ -15,7 +15,7 @@ const Hero = () => {
               <div className={styles.work2}>Ma. Clarisse Mateo</div>
             </section>
           </h1>
-          {/* <h2>Software Engineer</h2> */}
+          <h2 className="lg:hidden">Software Engineer</h2>
           <h5 className="pb-8">
             Based out Manila, PH. Specialized in building web and mobile
             applications.

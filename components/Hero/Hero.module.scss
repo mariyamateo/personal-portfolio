@@ -1,7 +1,6 @@
 .layout {
   @apply overflow-hidden h-screen flex justify-center items-center drop-shadow-md relative;
   z-index: 1;
-  box-shadow: 0 0 10px 20px #0F172A;
 
   .git {
     @apply absolute bottom-16 left-4 flex flex-row items-center space-x-2 text-slate-300 cursor-pointer;
@@ -9,40 +8,41 @@
       @apply text-slate-100;
     }
     @media (min-width: 1024px) {
-      @apply absolute bottom-8 left-28;
+      @apply absolute bottom-8 left-0;
     }
   }
 
   .heroLayout {
-    @apply flex flex-row justify-between items-center mx-4 w-full;
-
-    @media (min-width: 1024px) {
-      @apply mx-28
-    }
+    @apply flex flex-row justify-between items-center w-full;
 
     .hero {
-      @apply flex flex-col space-y-4;
-
       .name {
         background-image: linear-gradient(60deg, #7477FF, #fff, #7477FF,#fff);
         background-clip: text;
         color: transparent;
       }
       .work {
-        background-image: linear-gradient(60deg, #fff, #7477FF,);
-        background-clip: text;
-        color: transparent;
+        @apply hidden;
+        @media (min-width: 1024px) {
+          @apply block;
+          background-image: linear-gradient(60deg, #fff, #7477FF,);
+          background-clip: text;
+          color: transparent;
+        }
       }
       .work2 {
-        background-image: linear-gradient(60deg, #fff, #7477FF, #fff, #7477FF,);
-        background-clip: text;
-        color: transparent;
+        @apply hidden;
+        @media (min-width: 1024px) {
+          @apply block;
+          background-image: linear-gradient(60deg, #fff, #7477FF, #fff, #7477FF,);
+          background-clip: text;
+          color: transparent;
+        }
       }
       .animatedname {
-        height: 30px;
-        overflow:hidden;
         @media (min-width: 1024px) {
           height: 80px;
+          overflow:hidden;
         }
       }
       .animatedname > div > div {
@@ -51,20 +51,13 @@
       }
       
       .animatedname div:first-child {
-        animation: text-animation 3s infinite;
         @media (min-width: 1024px) {
           animation: text-animation 8s infinite;
         }
       }
-      @keyframes text-animation {
-        0% {margin-top: -0.5rem;}
-        20% {margin-top: -0.5rem;}
-        40% {margin-top: -4rem;}
-        60% {margin-top: -4rem;}
-        80% {margin-top: -0.5rem;}
-        100% {margin-top: -0.5rem;}
-      }
+     
       @media (min-width: 1024px) {
+        @apply flex flex-col space-y-4;
         @keyframes text-animation {
           0% {margin-top: 0;}
           10% {margin-top: 0;}

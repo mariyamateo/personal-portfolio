@@ -25,8 +25,15 @@
             @apply pt-32;
 
             .skills {
-                @apply flex flex-col space-y-4 w-2/3 pt-4;
-           
+                @apply flex flex-row flex-wrap pt-4 -ml-4;
+            }
+            .box {
+                @apply bg-[#1E293B] p-8 m-4 rounded-xl transition-all ease-linear duration-200 h-fit w-fit space-y-1;
+                transform: scale(1);
+                &:hover {
+                    @apply transition-all ease-linear duration-200;
+                    transform: scale(1.1);
+                }
             }
         }
     }

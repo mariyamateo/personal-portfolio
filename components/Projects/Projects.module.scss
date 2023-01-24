@@ -1,7 +1,6 @@
 .layout {
     @apply overflow-hidden bg-[#0F172A] w-screen;
-    border: 10px solid #0F172A;
-    box-shadow: 0 5px 5px 15px #0F172A;
+    box-shadow: 0 0 10px 20px #0F172A;
     z-index: 1;
    .projlayout {
         @apply mx-32 pt-32 pb-52;

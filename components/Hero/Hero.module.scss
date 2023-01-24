@@ -1,8 +1,7 @@
 .layout {
   @apply overflow-hidden h-screen flex justify-center items-center drop-shadow-md;
   z-index: 1;
-  border: 10px solid #0F172A;
-  box-shadow: 0 5px 5px 5px #0F172A;
+  box-shadow: 0 0 10px 20px #0F172A;
 
   .heroLayout {
     @apply flex flex-row justify-between items-center mx-28 w-full;

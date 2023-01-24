@@ -25,3 +25,22 @@
         }
     }
 }
+
+.disclaimer {
+    @apply relative p-16 text-center;
+
+    .close {
+        @apply absolute top-16 right-16 cursor-pointer text-slate-600;
+        &:hover {
+            @apply text-slate-500;
+        }
+    }
+
+    .content {
+        @apply flex flex-col items-center justify-center space-y-5 h-full pt-40 m-auto text-slate-300;
+
+        .caption {
+            @apply text-base;
+        }
+    }
+}

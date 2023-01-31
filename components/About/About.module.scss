@@ -2,15 +2,32 @@
     @apply overflow-hidden bg-[#0F172A];
     z-index: 1;
     .aboutLayout {
+        @apply flex flex-col flex-wrap bg-[#0F172A] w-full py-4;
+
         .about {
-            @apply flex flex-col flex-wrap bg-[#0F172A] w-full py-4;
-            .title {
-                @apply mb-8;
-            }
-           
             @media (min-width: 1024px) {
-                @apply py-32 pl-0;
+                @apply grid grid-cols-5;
             }
+        }
+        .aboutList {
+            @apply col-span-3;
+        }
+
+        .title {
+            @apply mb-8 col-span-2;
+            background-image: linear-gradient(60deg, #7477FF, #fff, #7477FF,#fff);
+            background-clip: text;
+            color: transparent;
+            br {
+                @apply hidden;
+                    @media (min-width: 1024px) {
+                    @apply block;
+                }
+            }
+        }
+        
+        @media (min-width: 1024px) {
+            @apply py-32 pl-0;
         }
         .lists {
             @apply flex flex-col space-y-6 pb-3;
@@ -24,11 +41,14 @@
         .techs {
             @apply pt-16;
             @media (min-width: 1024px) {
-                @apply pt-32;
+                @apply pt-32 grid grid-cols-4;
+            }
+            .title {
+                @apply col-span-1
             }
 
             .skills {
-                @apply flex flex-row flex-wrap justify-center pt-4 ml-0;
+                @apply flex flex-row flex-wrap justify-center ml-0 col-span-3;
                 @media (min-width: 1024px) {
                     @apply -ml-4;
                 }

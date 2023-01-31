@@ -6,7 +6,6 @@ const Contact = ({ onClick }) => {
   return (
     <div className={styles.layout}>
       <div className={styles.contactLayout}>
-        {/* <h1>Get in touch</h1> */}
         <h2 className="w-2/3">
           Are you a business seeking for a web presence or an employer looking
           to hire?

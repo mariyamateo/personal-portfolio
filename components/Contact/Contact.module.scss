@@ -17,7 +17,10 @@
             @apply space-y-10 mt-16;
         }
         .button {
-            @apply flex flex-row items-center justify-center space-x-2 w-full rounded-full px-6 py-2 bg-white text-black;
+            @apply flex flex-row items-center justify-center space-x-2 w-full rounded-full px-6 py-2 bg-white text-black transition-all ease-linear duration-300;
+            &:hover {
+                @apply shadow-lg shadow-[#7477FF] transition-all ease-linear duration-300;
+            }
         }
     }
 }

@@ -9,7 +9,7 @@
         }
 
        .title {
-           @apply border border-x-0 border-t-0 border-b-8 border-[#7477FF] w-full mb-8;
+           @apply mb-8;
         }
         .box {
             @apply flex flex-col items-center space-y-6 w-full;

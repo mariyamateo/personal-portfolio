@@ -46,14 +46,14 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 1200px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
-}
-
-.container {
-  margin: 0 112px;
 }
 
 h1 {

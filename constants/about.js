@@ -101,7 +101,7 @@ export const WORK_LIST = [
       "Collaborated with the design and development teams to ensure a seamless user experience",
     work4:
       "Implemented cross-browser compatibility to ensure the website works well in all modern browsers",
-    date: "NOV 2021 - PRESENT",
+    date: "2021 - PRESENT",
   },
 ];
 

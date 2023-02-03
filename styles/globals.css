@@ -32,10 +32,8 @@
 html,
 body {
   color: white;
-  background: #0F172A;
+  background: #1E1E1E;;
   margin: 0 auto;
-  padding: 0 8px;
-  max-width: 1200px;
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -82,7 +80,7 @@ h5 {
   line-height: 19px;
 }
 h6 {
-  font-family: 'PoppinsRegular', 'sans-serif';
+  font-family: 'InterMedium', 'sans-serif';
   font-size: 13px;
   line-height: 17px;  
 }
@@ -113,8 +111,8 @@ p {
     line-height: 24px;
   }
   h6 {
-    font-size: 18px;
-    line-height: 22px;  
+    font-size: 16px;
+    line-height: 19px; 
   }
   p {
     font-size: 16px;

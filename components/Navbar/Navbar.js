@@ -25,27 +25,6 @@ const Navbar = () => {
     }
   };
 
-  const onClickNav = (link) => {
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        scroller.scrollTo(link, {
-          duration: 500,
-          delay: 0,
-          smooth: "linear",
-          offset: 200,
-        });
-      }, 300);
-    } else {
-      scroller.scrollTo(link, {
-        duration: 500,
-        delay: 0,
-        smooth: "linear",
-        offset: 0,
-      });
-    }
-  };
-
   return (
     <div className={styles.layout} id="navBar">
       <div
@@ -54,18 +33,39 @@ const Navbar = () => {
         })}
       >
         <div onClick={() => router.push("/")} className="cursor-pointer">
-          <h4 className="text-[#7477FF]">macky</h4>
+          <img
+            className="w-20 h-20"
+            src="/images/svg/macky-dark.svg"
+            alt="logo-macky"
+            draggable={false}
+          />
         </div>
         <div className={styles.navbarMenu}>
           {NAVBAR_MENU.map((menu, key) => (
             <button
               key={menu.key}
               className={styles.menu}
-              onClick={() => onClickNav(menu.key)}
+              onClick={() => window.open(menu.link, "_blank")}
             >
-              <h5>{menu.name}</h5>
+              <img
+                className="w-8 h-8"
+                src={menu.imageDark}
+                alt={menu.key}
+                draggable={false}
+              />
             </button>
           ))}
+          <div
+            className={styles.cvDownload}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1hgX9u40z6RaBJ7INk2pTmR3TOUtVCjzG/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            <h6>Download CV</h6>
+          </div>
         </div>
       </div>
     </div>

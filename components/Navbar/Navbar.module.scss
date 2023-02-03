@@ -1,27 +1,33 @@
 .layout {
     @apply flex items-center justify-center fixed w-full z-50;
+    animation: btt 300ms ease-out forwards;
   }
   .navbarlayout {
-    @apply w-full py-8 px-28 flex flex-row justify-between items-center z-50 bg-[#0F172A];
+    @apply w-full py-3 px-28 flex flex-row justify-between items-center z-50;
     box-shadow: 0px 8px 12px transparent;
     .navbarMenu {
-      @apply flex flex-row space-x-9;
+      @apply flex flex-row space-x-3 items-center;
   
       .menu {
         @apply cursor-pointer;
+      }
+      .cvDownload {
+        @apply cursor-pointer border-2 py-1 px-3 rounded-full;
       }
     }
   }
   
   .navScrolled {
-    background-color: #0F172A !important;
-    animation: rtl 300ms ease-out forwards;
+    @apply border-b-4;
+    border-color: rgba(255, 255, 255, 0.02);
+    background-color: #1E1E1E !important;
+    animation: btt 300ms ease-out forwards;
   }
   
-  @keyframes rtl {
+  @keyframes btt {
     from {
       opacity: 0;
-      transform: translateY(-5rem);
+      transform: translateY(-1rem);
     }
     to {
       opacity: 1;

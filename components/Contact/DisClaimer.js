@@ -10,7 +10,7 @@ const DisClaimer = ({ show, close }) => {
             CLOSE
           </h6>
           <div className={styles.content}>
-            <h4>CONTENT DISCLAIMER</h4>
+            <h5>CONTENT DISCLAIMER</h5>
             <div className={styles.caption}>
               Developer represents and warrants that developer has the
               knowledge, skill and experience necessary to produce the works.

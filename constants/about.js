@@ -1,47 +1,3 @@
-export const ABOUT_LIST = [
-  {
-    id: 2,
-    about: "Familiarity with front-end build tools",
-  },
-  {
-    id: 3,
-    about: "Knowledge of responsive web design and mobile optimization",
-  },
-  {
-    id: 4,
-    about:
-      "Familiarity with cross-browser compatibility issues and ways to work around them",
-  },
-  {
-    id: 5,
-    about: "Experience with version control systems such as Git",
-  },
-  {
-    id: 6,
-    about: "Strong understanding of web performance optimization techniques",
-  },
-  {
-    id: 8,
-    about: "Experience with debugging and browser developer tools",
-  },
-  {
-    id: 9,
-    about: "Good understanding of SEO principles",
-  },
-  {
-    id: 10,
-    about: "Experience with accessibility and web standards",
-  },
-  {
-    id: 11,
-    about: "Good understanding of web security best practices",
-  },
-  {
-    id: 12,
-    about: "Familiarity with Agile development methodologies",
-  },
-];
-
 export const SKILLS_LIST = [
   {
     id: 2,
@@ -80,20 +36,40 @@ export const SKILLS_LIST = [
   },
   {
     id: 7,
+    name: "Next",
+    image: "/images/svg/next.svg",
+  },
+  {
+    id: 8,
     name: "Node",
     image: "/images/svg/node.svg",
   },
   {
-    id: 8,
+    id: 9,
     name: "Web3",
     image: "/images/svg/web3.svg",
+  },
+  {
+    id: 10,
+    name: "Github",
+    image: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+  },
+  {
+    id: 11,
+    name: "Figma",
+    image: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+  },
+  {
+    id: 12,
+    name: "Tailwind CSS",
+    image: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg",
   },
 ];
 
 export const WORK_LIST = [
   {
     id: 0,
-    company: "dApp NFT Developer",
+    company: "Webmint",
     role: "Frontend Developer",
     work1: "Develop a responsive dApp NFT projects using React and Node.js",
     work2: "Utilized Adobe Photoshop to create and implement design assets",

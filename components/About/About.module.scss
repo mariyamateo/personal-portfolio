@@ -1,70 +1,35 @@
 .layout {
-    @apply overflow-hidden bg-[#0F172A];
+    @apply overflow-hidden mt-40;
     z-index: 1;
     .aboutLayout {
-        @apply flex flex-col flex-wrap bg-[#0F172A] w-full py-4;
+        @apply flex flex-col flex-wrap w-full py-4 mx-auto;
+        max-width: 1200px;
 
-        .about {
+        .aboutME {
             @media (min-width: 1024px) {
-                @apply grid grid-cols-5;
+                @apply grid grid-cols-2;
             }
-        }
-        .aboutList {
-            @apply col-span-3;
-        }
-
-        .title {
-            @apply mb-8 col-span-2;
-            background-image: linear-gradient(60deg, #7477FF, #fff, #7477FF,#fff);
-            background-clip: text;
-            color: transparent;
-            br {
-                @apply hidden;
-                    @media (min-width: 1024px) {
-                    @apply block;
-                }
+            .caption {
+                @apply col-span-1;
             }
-        }
-        
-        @media (min-width: 1024px) {
-            @apply py-32 pl-0;
-        }
-        .lists {
-            @apply flex flex-col space-y-6 pb-3;
-            .rod {
-                @apply w-5;
+    
+            .image {
+                @apply mb-8 col-span-1;
+                
             }
-            li {
-                @apply flex flex-row space-x-2;
-            }
-        }
-        .techs {
-            @apply pt-16;
-            @media (min-width: 1024px) {
-                @apply pt-32 grid grid-cols-4;
-            }
-            .title {
-                @apply col-span-1
-            }
-
             .skills {
-                @apply flex flex-row flex-wrap justify-center ml-0 col-span-3;
-                @media (min-width: 1024px) {
-                    @apply -ml-4;
+                @apply grid grid-cols-5 gap-5 ml-auto mt-8 mr-8;
+                .box {
+                    @apply flex flex-col items-center space-y-2;
+        
+                    .image {
+                        @apply w-12 h-12 m-0;
+                    }
                 }
             }
-            .box {
-                @apply bg-[#1E293B] p-6 m-2 rounded-xl transition-all ease-linear duration-200 h-fit w-fit space-y-1;
-                transform: scale(1);
-                &:hover {
-                    @apply transition-all ease-linear duration-200;
-                    transform: scale(1.1);
-                }
-
-                @media (min-width: 1024px) {
-                    @apply p-8 m-4;
-                }
-            }
+        }
+        .experience {
+            @apply py-40;
         }
     }
 }

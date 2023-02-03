@@ -1,77 +1,50 @@
 .layout {
-  @apply overflow-hidden h-screen flex justify-center items-center drop-shadow-md relative;
+  @apply overflow-hidden h-screen flex justify-center items-center drop-shadow-md;
   z-index: 1;
-
-  .git {
-    @apply absolute bottom-16 left-4 flex flex-row items-center space-x-2 text-slate-300 cursor-pointer;
-    &:hover {
-      @apply text-slate-100;
-    }
-    @media (min-width: 1024px) {
-      @apply absolute bottom-8 left-0;
-    }
-  }
 
   .heroLayout {
     @apply flex flex-row justify-between items-center w-full;
+    max-width: 1200px;
 
     .hero {
+      .first {
+        color: rgba(255, 255, 255, 0.5);
+      }
       .name {
-        background-image: linear-gradient(60deg, #7477FF, #fff, #7477FF,#fff);
+        background-image: linear-gradient(60deg, #FF8E5E, #FFC5B2, #FF8E5E,#fff);
         background-clip: text;
         color: transparent;
       }
+      .workList {
+        @apply flex flex-row;
+
+        .listDescription {
+          position: relative;
+        }
+        
+        .listDescription::after {
+          content: "";
+          position: relative;
+          right: -5px;
+          width: 1px;
+          height: 90%;
+          animation: blink 0.5s infinite ease;
+        }
+        
+        @keyframes blink {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
       .work {
-        @apply hidden;
-        @media (min-width: 1024px) {
-          @apply block;
-          background-image: linear-gradient(60deg, #fff, #7477FF,);
-          background-clip: text;
-          color: transparent;
-        }
+        background-image: linear-gradient(60deg, #FFC5B2, #FF8E5E,);
+        background-clip: text;
+        color: transparent;
       }
-      .work2 {
-        @apply hidden;
-        @media (min-width: 1024px) {
-          @apply block;
-          background-image: linear-gradient(60deg, #fff, #7477FF, #fff, #7477FF,);
-          background-clip: text;
-          color: transparent;
-        }
-      }
-      .animatedname {
-        @media (min-width: 1024px) {
-          height: 80px;
-          overflow:hidden;
-        }
-      }
-      .animatedname > div > div {
-        margin-bottom: 2.81rem;
-        display:inline-block;
-      }
-      
-      .animatedname div:first-child {
-        @media (min-width: 1024px) {
-          animation: text-animation 8s infinite;
-        }
-      }
-     
-      @media (min-width: 1024px) {
-        @apply flex flex-col space-y-4;
-        @keyframes text-animation {
-          0% {margin-top: 0;}
-          10% {margin-top: 0;}
-          20% {margin-top: -7rem;}
-          30% {margin-top: -7rem;}
-          40% {margin-top: -12.8rem;}
-          60% {margin-top: -12.8rem;}
-          70% {margin-top: -7rem;}
-          80% {margin-top: -7rem;}
-          90% {margin-top: 0;}
-          100% {margin-top: 0;}
-        }
-      }
-      
     }
   }
 }

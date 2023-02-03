@@ -1,3 +1,4 @@
+import MarqueeSkills from "@/components/Marquee/Marquee";
 import { useState } from "react";
 import {
   About,
@@ -18,6 +19,7 @@ export default function Home() {
         <>
           <Navbar />
           <Hero />
+          <MarqueeSkills />
           <About />
           <Projects />
           <Contact onClick={() => Toggle()} />

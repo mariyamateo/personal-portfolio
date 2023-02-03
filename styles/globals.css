@@ -61,7 +61,7 @@ h1 {
 }
 h2 {
   font-family: 'PoppinsBold', 'sans-serif';
-  font-size: 25px;
+  font-size: 24px;
   line-height: 42px;
 }
 h3 {
@@ -95,8 +95,8 @@ p {
     line-height: 95px;
   }
   h2 {
-    font-size: 45px;
-    line-height: 52px;
+    font-size: 40px;
+    line-height: 50px;
   }
   h3 {
     font-size: 18px;

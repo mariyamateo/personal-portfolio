@@ -7,7 +7,7 @@ import cx from "classnames";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
-  const [isNavbarBgWhite, setIsNavbarBgWhite] = useState(false);
+  const [isNavbarScrolled, setIsNavbarScrolled] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -19,17 +19,22 @@ const Navbar = () => {
 
   const whiteBgNavbar = () => {
     if (window.scrollY >= 20) {
-      setIsNavbarBgWhite(true);
+      setIsNavbarScrolled(true);
     } else {
-      setIsNavbarBgWhite(false);
+      setIsNavbarScrolled(false);
     }
   };
 
   return (
-    <div className={styles.layout} id="navBar">
+    <div
+      className={cx(styles.layout, {
+        [styles.layoutScrolled]: isNavbarScrolled,
+      })}
+      id="navBar"
+    >
       <div
         className={cx(styles.navbarlayout, {
-          [styles.navScrolled]: isNavbarBgWhite,
+          [styles.navScrolled]: isNavbarScrolled,
         })}
       >
         <div onClick={() => router.push("/")} className="cursor-pointer">
@@ -56,7 +61,7 @@ const Navbar = () => {
             </button>
           ))}
           <div
-            className={styles.cvDownload}
+            className="pl-5"
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1hgX9u40z6RaBJ7INk2pTmR3TOUtVCjzG/view?usp=sharing",
@@ -64,7 +69,9 @@ const Navbar = () => {
               )
             }
           >
-            <h6>Download CV</h6>
+            <div className={styles.cvDownload}>
+              <h6>Download CV</h6>
+            </div>
           </div>
         </div>
       </div>

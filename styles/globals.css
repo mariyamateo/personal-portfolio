@@ -66,28 +66,28 @@ h2 {
 }
 h3 {
   font-family: 'PoppinsBold', 'sans-serif';
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 22px;
 }
 h4 {
   font-family: 'InterBold', 'sans-serif';
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 28px;
+  line-height: 24px;
 }
 h5 {
   font-family: 'InterMedium', 'sans-serif';
-  font-size: 15px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 24px;
 }
 h6 {
   font-family: 'InterMedium', 'sans-serif';
-  font-size: 13px;
-  line-height: 17px;  
+  font-size: 16px;
+  line-height: 19px;   
 }
 p {
   font-family: 'PoppinsRegular', 'sans-serif';
-  font-size: 11px;
-  line-height: 15px;  
+  font-size: 16px;
+  line-height: 20px;  
 }
 @media (min-width: 1024px) {
   h1 {
@@ -97,25 +97,5 @@ p {
   h2 {
     font-size: 40px;
     line-height: 50px;
-  }
-  h3 {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  h4 {
-    font-size: 28px;
-    line-height: 24px;
-  }
-  h5 {
-    font-size: 20px;
-    line-height: 24px;
-  }
-  h6 {
-    font-size: 16px;
-    line-height: 19px; 
-  }
-  p {
-    font-size: 16px;
-    line-height: 20px;  
   }
 }

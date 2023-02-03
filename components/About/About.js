@@ -43,7 +43,7 @@ const About = () => {
           </div>
           <div className={styles.image}>
             <img
-              className="rounded-2xl"
+              className="rounded-2xl hidden lg:block"
               src="/images/png/about-dark.png"
               alt="dark"
               draggable={false}
@@ -52,9 +52,9 @@ const About = () => {
         </div>
         <div className={styles.experience}>
           <h2 className="pb-10">💼 Professional Experience</h2>
-          <div className="p-8">
+          <div className="p-8 flex flex-col space-y-10">
             {WORK_LIST.map((work, index) => (
-              <>
+              <div>
                 <div className="flex flex-row items-center space-x-4">
                   <h4>{work.company}</h4>
                   <h6>({work.date})</h6>
@@ -65,7 +65,7 @@ const About = () => {
                   <h6>• {work.work2}</h6>
                   <h6>• {work.work3}</h6>
                 </div>
-              </>
+              </div>
             ))}
           </div>
         </div>

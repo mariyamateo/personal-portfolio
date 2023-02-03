@@ -3,7 +3,7 @@
   z-index: 1;
 
   .heroLayout {
-    @apply flex flex-row justify-between items-center w-full;
+    @apply flex flex-row justify-between items-center p-4 w-full;
     max-width: 1200px;
 
     .hero {
@@ -16,8 +16,10 @@
         color: transparent;
       }
       .workList {
-        @apply flex flex-row;
-
+        @apply flex flex-col;
+        @media (min-width: 1024px) {
+          @apply flex flex-row;
+        }
         .listDescription {
           position: relative;
         }

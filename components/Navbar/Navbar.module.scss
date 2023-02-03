@@ -7,7 +7,7 @@
   border-color: rgba(255, 255, 255, 0.02);
 }
 .navbarlayout {
-  @apply w-full py-3 flex flex-row justify-between items-center z-50;
+  @apply w-full p-3 flex flex-row justify-between items-center z-50;
   box-shadow: 0px 8px 12px transparent;
   max-width: 1200px;
   .navbarMenu {

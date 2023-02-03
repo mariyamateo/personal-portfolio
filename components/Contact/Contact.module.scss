@@ -36,7 +36,7 @@
 }
 
 .disclaimer {
-    @apply relative p-16 text-center;
+    @apply relative p-16 text-center bg-black h-screen;
 
     .close {
         @apply absolute top-16 right-16 cursor-pointer text-slate-600;
@@ -46,7 +46,7 @@
     }
 
     .content {
-        @apply flex flex-col items-center justify-center space-y-5 h-full pt-40 m-auto text-slate-300;
+        @apply flex flex-col items-center justify-center space-y-5 h-full m-auto text-slate-300;
 
         .caption {
             @apply text-base;

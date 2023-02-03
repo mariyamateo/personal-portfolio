@@ -21,7 +21,7 @@ export default function Home() {
           <Hero />
           <MarqueeSkills />
           <About />
-          <Projects />
+          {/* <Projects /> */}
           <Contact onClick={() => Toggle()} />
         </>
       ) : (

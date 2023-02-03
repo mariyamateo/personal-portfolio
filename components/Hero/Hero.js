@@ -47,10 +47,10 @@ const Hero = () => {
           <div className={styles.workList}>
             <h2>
               I'm a <span className={styles.work}>Frontend Web Developer</span>{" "}
-              &
+              &&
             </h2>
             <h2>
-              &{" "}
+              {" "}
               <span
                 className={cx(
                   styles.listDescription,

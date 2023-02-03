@@ -1,50 +1,16 @@
 .layout {
-    @apply overflow-hidden bg-[#0F172A] w-screen;
+    @apply overflow-hidden w-screen;
     z-index: 1;
+    .skills {
+        @apply bg-[#19191D];
+        .skillLayout {
+            @apply mx-auto p-16;
+            max-width: 1200px;
+
+        }
+    }
    .projlayout {
         @apply pt-16 pb-52;
-       
-        @media (min-width: 1024px) {
-            @apply pt-32;
-        }
-
-        .workList {
-            @media (min-width: 1024px) {
-                @apply grid grid-cols-5;
-            }
-        }
-
-       .title {
-            @apply mb-8 col-span-1;
-           background-image: linear-gradient(60deg, #7477FF, #fff, #7477FF,#fff);
-           background-clip: text;
-           color: transparent;
-        }
-        .listWork {
-            @apply col-span-4;
-        }
-        .box {
-            @apply flex flex-col items-center space-y-6 w-full;
-            @media (min-width: 1020px) {
-                @apply w-2/3;
-            }
-        }
-        .work {
-            @apply bg-[#1E293B] p-4 rounded-xl  w-2/3 mx-auto mb-16 space-y-1;
-            @media (min-width: 1024px) {
-                @apply p-8 mb-32 space-y-1 w-full;
-            }
-        }
-        .project {
-            @apply bg-[#1E293B] w-2/3 mx-auto p-4 rounded-xl space-y-1 cursor-pointer;
-            @media (min-width: 1024px) {
-                @apply transition-all ease-linear duration-200 p-8 w-full m-0;
-                transform: scale(1);
-                &:hover {
-                    @apply transition-all ease-linear duration-200;
-                    transform: scale(1.05);
-                }
-            }
-        }
+        max-width: 1200px;
     }
 }

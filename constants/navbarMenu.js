@@ -1,22 +1,23 @@
 export const NAVBAR_MENU = [
   {
     id: 0,
-    key: 'about',
-    name: 'About',
+    key: "github",
+    name: "Github",
+    imageDark: "/images/svg/github.svg",
+    link: "https://github.com/mariyamateo",
   },
   {
     id: 1,
-    key: 'projects',
-    name: 'Projects',
+    key: "linkedin",
+    name: "LinkedIn",
+    imageDark: "/images/svg/linkedin-dark.svg",
+    link: "https://www.linkedin.com/in/maclarisse-mateo/",
   },
   {
     id: 2,
-    key: 'contact',
-    name: 'Contact',
-  },
-  {
-    id: 3,
-    key: 'resume',
-    name: 'Resume',
+    key: "instagram",
+    name: "Instagram",
+    imageDark: "/images/svg/instagram.svg",
+    link: "https://www.instagram.com/engr.macky_/",
   },
 ];

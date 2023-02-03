@@ -7,7 +7,7 @@ import cx from "classnames";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
-  const [isNavbarBgWhite, setIsNavbarBgWhite] = useState(false);
+  const [isNavbarScrolled, setIsNavbarScrolled] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -19,53 +19,60 @@ const Navbar = () => {
 
   const whiteBgNavbar = () => {
     if (window.scrollY >= 20) {
-      setIsNavbarBgWhite(true);
+      setIsNavbarScrolled(true);
     } else {
-      setIsNavbarBgWhite(false);
-    }
-  };
-
-  const onClickNav = (link) => {
-    if (location.pathname !== "/") {
-      navigate("/");
-      setTimeout(() => {
-        scroller.scrollTo(link, {
-          duration: 500,
-          delay: 0,
-          smooth: "linear",
-          offset: 200,
-        });
-      }, 300);
-    } else {
-      scroller.scrollTo(link, {
-        duration: 500,
-        delay: 0,
-        smooth: "linear",
-        offset: 0,
-      });
+      setIsNavbarScrolled(false);
     }
   };
 
   return (
-    <div className={styles.layout} id="navBar">
+    <div
+      className={cx(styles.layout, {
+        [styles.layoutScrolled]: isNavbarScrolled,
+      })}
+      id="navBar"
+    >
       <div
         className={cx(styles.navbarlayout, {
-          [styles.navScrolled]: isNavbarBgWhite,
+          [styles.navScrolled]: isNavbarScrolled,
         })}
       >
         <div onClick={() => router.push("/")} className="cursor-pointer">
-          <h4 className="text-[#7477FF]">macky</h4>
+          <img
+            className="w-20 h-20"
+            src="/images/svg/macky-dark.svg"
+            alt="logo-macky"
+            draggable={false}
+          />
         </div>
         <div className={styles.navbarMenu}>
           {NAVBAR_MENU.map((menu, key) => (
             <button
               key={menu.key}
               className={styles.menu}
-              onClick={() => onClickNav(menu.key)}
+              onClick={() => window.open(menu.link, "_blank")}
             >
-              <h5>{menu.name}</h5>
+              <img
+                className="w-8 h-8"
+                src={menu.imageDark}
+                alt={menu.key}
+                draggable={false}
+              />
             </button>
           ))}
+          <div
+            className="pl-5"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1hgX9u40z6RaBJ7INk2pTmR3TOUtVCjzG/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            <div className={styles.cvDownload}>
+              <h6>Download CV</h6>
+            </div>
+          </div>
         </div>
       </div>
     </div>

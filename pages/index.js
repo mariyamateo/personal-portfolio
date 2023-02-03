@@ -1,5 +1,13 @@
+import MarqueeSkills from "@/components/Marquee/Marquee";
 import { useState } from "react";
-import { About, Contact, DisClaimer, Hero, Projects } from "../components";
+import {
+  About,
+  Contact,
+  DisClaimer,
+  Hero,
+  Navbar,
+  Projects,
+} from "../components";
 
 export default function Home() {
   const [modal, setModal] = useState(false);
@@ -9,9 +17,11 @@ export default function Home() {
     <div>
       {!modal ? (
         <>
+          <Navbar />
           <Hero />
+          <MarqueeSkills />
           <About />
-          <Projects />
+          {/* <Projects /> */}
           <Contact onClick={() => Toggle()} />
         </>
       ) : (

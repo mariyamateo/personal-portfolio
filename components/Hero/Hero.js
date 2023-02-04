@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Button } from "../Button";
+import { Button } from "../Cards";
 import styles from "./Hero.module.scss";
 import cx from "classnames";
 
@@ -9,6 +9,7 @@ const Hero = () => {
   useEffect(() => {
     const texts = [
       "Web3 Enthusiast.         ",
+      "Career Shifter.         ",
       "Civil Engineer.         ",
       "Master Plumber.         ",
       "Traveller.         ",
@@ -50,15 +51,7 @@ const Hero = () => {
               &&
             </h2>
             <h2>
-              {" "}
-              <span
-                className={cx(
-                  styles.listDescription,
-                  "ml-[10px] after:border-r-[2px] after:border-r-white after:border-r-solid"
-                )}
-              >
-                {text}
-              </span>
+              <span className="ml-2">{text}</span>
             </h2>
           </div>
           <h5 className="pb-8">

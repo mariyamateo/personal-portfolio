@@ -1,11 +1,12 @@
 import { SKILLS_DESC } from "@/constants/about";
+import { PROJECTS_LIST } from "@/constants/projects";
 import React from "react";
 import { Element } from "react-scroll";
-import { SkillCards } from "../Cards";
+import { DeliverablesCard, SkillCards } from "../Cards";
 
 const Projects = () => {
   return (
-    <Element className="overflow-hidden w-screen" name="projects">
+    <Element className="overflow-hidden w-screen pb-40" name="projects">
       <div className="bg-[#19191D] p-4">
         <div className="mx-auto py-16 max-w-7xl">
           <h1>
@@ -18,7 +19,16 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      <div className="pt-16 pb-52 max-w-7xl"></div>
+      <div className="mx-auto text-center pt-24 px-4 max-w-7xl">
+        <h1>
+          My <span className="text-[#FF8E5E]">deliverables</span>
+        </h1>
+        <div className="grid lg:grid-cols-2 gap-12 pt-12">
+          {PROJECTS_LIST.map((proj) => (
+              <DeliverablesCard proj={proj} />
+          ))}
+        </div>
+      </div>
     </Element>
   );
 };

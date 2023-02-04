@@ -1,4 +1,11 @@
 import { Button, ContactButton } from "./Button";
-import { SkillCards, TechCards, WorkCards } from "./Cards";
+import { SkillCards, TechCards, WorkCards, DeliverablesCard } from "./Cards";
 
-export { Button, ContactButton, SkillCards, TechCards, WorkCards };
+export {
+  Button,
+  ContactButton,
+  SkillCards,
+  TechCards,
+  WorkCards,
+  DeliverablesCard,
+};

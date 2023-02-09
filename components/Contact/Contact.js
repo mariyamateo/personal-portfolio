@@ -1,51 +1,36 @@
 import React from "react";
-import styles from "./Contact.module.scss";
-import DisClaimer from "./DisClaimer";
+import { ContactButton } from "../Cards";
 
 const Contact = ({ onClick }) => {
   return (
-    <div className={styles.layout}>
-      <div className={styles.contactLayout}>
-        <h2 className="w-2/3">
-          Are you a business seeking for a web presence or an employer looking
-          to hire?
+    <div className='bg-[url("/images/contact.jpg")] bg-fixed bg-no-repeat bg-bottom bg-cover relative'>
+      <div className="bg-black opacity-80 py-16 flex flex-col items-center justify-center md:justify-start text-center h-screen md:py-32 md:justify-center">
+        <h2 className="w-2/3 text-[#FF8E5E]">
+          Are you a business seeking for a web presence or{" "}
+          <br className="hidden md:block" /> an employer looking to hire?
         </h2>
-        <div className={styles.buttons}>
-          <a href="mailto:ma.clarissepmateo@gmail.com">
-            <button className={styles.button}>
-              <img
-                src="/images/svg/mail.gif"
-                alt="mail"
-                draggable={false}
-                className="h-8"
-              />
-              <h3>Shoot me an email</h3>
-            </button>
-          </a>
-          <button
-            className={styles.button}
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/maclarisse-mateo/",
-                "_blank"
-              )
-            }
-          >
-            <img
-              src="/images/svg/linkedin.gif"
-              alt="linkedin"
-              draggable={false}
-            />
-            <h3>Connect via LinkedIn</h3>
-          </button>
+        <div className="flex flex-col mt-12 space-y-6 md:space-y-10 md:mt-16">
+          <ContactButton
+            link={"mailto:ma.clarissepmateo@gmail.com"}
+            image={"/images/svg/mail.gif"}
+            caption={"Shoot me an email"}
+          />
+          <ContactButton
+            link={"https://www.linkedin.com/in/maclarisse-mateo/"}
+            image={"/images/svg/linkedin.gif"}
+            caption={"Connect via LinkedIn"}
+          />
         </div>
-        <div className={styles.footer}>
-          <p>
+        <div className="px-5 py-1 absolute bottom-0 left-0 bg-[#1E1E1E] w-full text-left">
+          <h6>
             Copyright © 2023 Ma. Clarisse Mateo •{" "}
-            <span className={styles.disclaimerButton} onClick={onClick}>
+            <span
+              className="cursor-pointer hover:text-slate-300 text-base"
+              onClick={onClick}
+            >
               Disclaimer
             </span>
-          </p>
+          </h6>
         </div>
       </div>
     </div>

@@ -61,7 +61,7 @@ const Navbar = () => {
             </button>
           ))}
           <div
-            className="pl-5"
+            className="pl-5 hidden md:block"
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1hgX9u40z6RaBJ7INk2pTmR3TOUtVCjzG/view?usp=sharing",

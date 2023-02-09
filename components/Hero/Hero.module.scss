@@ -14,7 +14,7 @@
         color: transparent;
       }
       .workList {
-        @apply flex flex-col;
+        @apply flex flex-col pb-8;
         @media (min-width: 1024px) {
           @apply flex flex-row;
         }

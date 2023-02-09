@@ -51,7 +51,7 @@ const Hero = () => {
               &&
             </h2>
             <h2>
-              <span className="ml-2">{text}</span>
+              <span className="md:ml-2">{text}</span>
             </h2>
           </div>
           <h5 className="pb-8">

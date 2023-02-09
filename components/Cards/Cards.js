@@ -30,7 +30,7 @@ export const TechCards = ({ skills }) => {
 export const WorkCards = ({ work }) => {
   return (
     <div key={work.id}>
-      <div className="flex flex-row items-center space-x-4">
+      <div className="flex flex-col md:flex-row md:items-center md:space-x-4">
         <h4>{work.company}</h4>
         <h6>({work.date})</h6>
       </div>
@@ -46,12 +46,12 @@ export const WorkCards = ({ work }) => {
 
 export const DeliverablesCard = ({ proj }) => {
   return (
-    <div className="relative w-1/2 lg:w-full mx-auto">
+    <div className="relative w-3/4 lg:w-full mx-auto">
       <div
         className="overflow-hidden rounded-[16px] shadow-[0px_1px_32px_7px_#131313] relative group"
         key={proj.id}
       >
-        <h2 className="absolute top-[calc(50%-24px)] left-[calc(20%)] text-[#FF8E5E] group-hover:hidden">
+        <h2 className="absolute right-4 bottom-8 lg:right-12 text-[#FF8E5E] group-hover:hidden">
           {proj.name}
         </h2>
         <div className="backdrop-blur-sm bg-black opacity-10 transition-all ease-linear hover:opacity-80 w-full overflow-x-hidden h-96">

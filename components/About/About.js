@@ -25,7 +25,7 @@ const About = () => {
             <h3 className="pt-16">
               Here are a few technologies I’ve been working with recently:
             </h3>
-            <div className="grid grid-cols-5 gap-5 ml-auto mt-8 mr-8">
+            <div className="grid grid-cols-4 md:grid-cols-5 gap-5 mx-auto mt-8 md:mr-8">
               {SKILLS_LIST.map((skills) => (
                 <TechCards skills={skills} />
               ))}
@@ -42,7 +42,7 @@ const About = () => {
         </div>
         <div className="pt-40 pb-20">
           <h2 className="pb-10">💼 Professional Experience</h2>
-          <div className="p-8 flex flex-col space-y-10">
+          <div className="p-4 md:p-8 flex flex-col space-y-10">
             {WORK_LIST.map((work) => (
               <WorkCards work={work} />
             ))}

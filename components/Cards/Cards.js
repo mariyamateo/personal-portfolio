@@ -48,7 +48,7 @@ export const DeliverablesCard = ({ proj }) => {
   return (
     <div className="relative w-3/4 lg:w-full mx-auto">
       <div
-        className="overflow-hidden rounded-[16px] shadow-[0px_1px_32px_7px_#131313] relative group"
+        className="overflow-hidden overscroll-none rounded-[16px] shadow-[0px_1px_32px_7px_#131313] relative group"
         key={proj.id}
       >
         <h2 className="absolute right-4 bottom-8 lg:right-12 text-[#FF8E5E] group-hover:hidden">

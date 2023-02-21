@@ -34,7 +34,7 @@ export const WorkCards = ({ work }) => {
         <h4>{work.company}</h4>
         <h6>({work.date})</h6>
       </div>
-      <h6 className="pt-4">{work.role}</h6>
+      <h6 className="pt-1">{work.role}</h6>
       <div className="flex flex-col space-y-1 pt-3">
         {work.work.map((item) => (
           <h6>• {item}</h6>

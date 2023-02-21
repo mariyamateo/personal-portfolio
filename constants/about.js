@@ -73,7 +73,7 @@ export const WORK_LIST = [
     role: "Frontend Developer",
     work: [
       "Develop a responsive dApp NFT projects using React and Node.js",
-      "Utilized Adobe Photoshop to create and implement design assets",
+      "Utilized Figma to create and implement design assets",
       "Collaborated with the design and development teams to ensure a seamless user experience",
       "Implemented cross-browser compatibility to ensure the website works well in all modern browsers",
     ],

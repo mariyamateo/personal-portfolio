@@ -60,7 +60,7 @@ const Navbar = () => {
               />
             </button>
           ))}
-          <div
+          {/* <div
             className="pl-5 hidden md:block"
             onClick={() =>
               window.open(
@@ -72,7 +72,7 @@ const Navbar = () => {
             <div className={styles.cvDownload}>
               <h6>Download CV</h6>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

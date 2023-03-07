@@ -19,7 +19,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-      {/* <div className="mx-auto text-center pt-24 px-4 md:max-w-7xl">
+      <div className="mx-auto text-center py-24 px-4 md:max-w-7xl">
         <h1>
           My <span className="text-[#FF8E5E]">deliverables</span>
         </h1>
@@ -28,7 +28,7 @@ const Projects = () => {
               <DeliverablesCard proj={proj} />
           ))}
         </div>
-      </div> */}
+      </div>
     </Element>
   );
 };

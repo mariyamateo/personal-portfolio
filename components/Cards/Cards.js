@@ -58,17 +58,19 @@ export const DeliverablesCard = ({ proj }) => {
           <img src={proj.image} alt={proj.name} draggable={false} />
         </div>
       </div>
-      <div
-        className="absolute -bottom-4 -right-4"
-        onClick={() => window.open(proj.link, "_blank")}
-      >
-        <img
-          className="h-12 cursor-pointer shadow-[0px_1px_32px_7px_#131313] rounded-full"
-          src="/images/svg/link.svg"
-          alt="link"
-          draggable={false}
-        />
-      </div>
+      {proj.link && (
+        <div
+          className="absolute -bottom-4 -right-4"
+          onClick={() => window.open(proj.link, "_blank")}
+        >
+          <img
+            className="h-12 cursor-pointer shadow-[0px_1px_32px_7px_#131313] rounded-full"
+            src="/images/svg/link.svg"
+            alt="link"
+            draggable={false}
+          />
+        </div>
+      )}
     </div>
   );
 };

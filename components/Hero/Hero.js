@@ -8,6 +8,9 @@ const Hero = () => {
 
   useEffect(() => {
     const texts = [
+      "UI/UX Developer.         ",
+      "UI/UX Designer.         ",
+      "Web Designer.         ",
       "Web3 Enthusiast.         ",
       "Career Shifter.         ",
       "Civil Engineer.         ",

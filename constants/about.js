@@ -92,18 +92,18 @@ export const WORK_LIST = [
     ],
     date: "2020 - 2021",
   },
-  {
-    id: 2,
-    company: "DPWH",
-    role: "Civil Engineer",
-    work: [
-      "Create technical drawings and blueprints.",
-      "Analyze and solve design problems.",
-      "Collaborate with other engineers and architects.",
-      "Use software to create construction simulations and animations.",
-    ],
-    date: "2017 - 2020",
-  },
+  // {
+  //   id: 2,
+  //   company: "DPWH",
+  //   role: "Civil Engineer",
+  //   work: [
+  //     "Create technical drawings and blueprints.",
+  //     "Analyze and solve design problems.",
+  //     "Collaborate with other engineers and architects.",
+  //     "Use software to create construction simulations and animations.",
+  //   ],
+  //   date: "2017 - 2020",
+  // },
 ];
 
 export const SKILLS_DESC = [

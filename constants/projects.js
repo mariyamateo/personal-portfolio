@@ -11,24 +11,24 @@ export const PROJECTS_LIST = [
     name: "Sociopedia",
     link: "https://sociopedia-emvz.onrender.com/",
   },
-  // {
-  //   id: 2,
-  //   image: "/images/png/projects/ac.webp",
-  //   name: "Approving Corgis",
-  // },
-  // {
-  //   id: 3,
-  //   image: "/images/png/projects/tb.webp",
-  //   name: "Tasty Bones NFT",
-  // },
-  // {
-  //   id: 4,
-  //   image: "/images/png/projects/yagi.webp",
-  //   name: "Yagiverse NFT",
-  // },
-  // {
-  //   id: 5,
-  //   image: "/images/png/projects/fov.webp",
-  //   name: "FOV NFT",
-  // },
+  {
+    id: 2,
+    image: "/images/png/projects/ac.webp",
+    name: "Approving Corgis",
+  },
+  {
+    id: 3,
+    image: "/images/png/projects/tb.webp",
+    name: "Tasty Bones NFT",
+  },
+  {
+    id: 4,
+    image: "/images/png/projects/yagi.webp",
+    name: "Yagiverse NFT",
+  },
+  {
+    id: 5,
+    image: "/images/png/projects/fov.webp",
+    name: "FOV NFT",
+  },
 ];

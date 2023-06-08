@@ -58,7 +58,7 @@ const Hero = () => {
             </h2>
           </div>
           <h5 className="pb-8">
-            Based out Manila, PH. Specialized in building web and mobile
+            Based out Camarines Sur, Bicol, PH. Specialized in building web and mobile
             applications.
           </h5>
           <a href="mailto:ma.clarissepmateo@gmail.com">

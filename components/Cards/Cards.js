@@ -15,7 +15,11 @@ export const SkillCards = ({ desc }) => {
 
 export const TechCards = ({ skills }) => {
   return (
-    <div key={skills.id} className="flex flex-col items-center space-y-2">
+    <div
+      key={skills.id}
+      className="flex flex-col items-center space-y-2 cursor-pointer transition-all ease-linear hover:scale-110"
+      onClick={() => window.open(skills.link, "_blank")}
+    >
       <img
         className="w-12 h-12 m-0"
         src={skills.image}

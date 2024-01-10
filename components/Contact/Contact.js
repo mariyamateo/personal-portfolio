@@ -45,6 +45,13 @@ const Contact = ({ onClick }) => {
               >
                 <h6>Disclaimer</h6>
               </span>
+              <h6 className="hidden xl:block">•</h6>
+              <span
+                className="cursor-pointer hover:text-slate-300 text-base"
+                onClick={() => window.open('/games/guess-my-number', "_blank")}
+              >
+                <h6>Games</h6>
+              </span>
             </div>
             <div>
               {quote ? (

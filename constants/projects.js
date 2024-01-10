@@ -15,11 +15,13 @@ export const PROJECTS_LIST = [
     id: 2,
     image: "/images/png/projects/ac.webp",
     name: "Approving Corgis",
+    link: "https://approvingcorgis.com/",
   },
   {
     id: 3,
     image: "/images/png/projects/tb.webp",
     name: "Tasty Bones NFT",
+    link: "https://tastybones.xyz/",
   },
   {
     id: 4,

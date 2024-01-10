@@ -99,3 +99,7 @@ p {
     line-height: 50px;
   }
 }
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

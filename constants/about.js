@@ -81,7 +81,19 @@ export const SKILLS_LIST = [
 
 export const WORK_LIST = [
   {
-    id: 0,
+    id: 3,
+    company: "Inchcape Digital Delivery Center Phil., Inc.",
+    role: "Frontend Developer",
+    work: [
+      "Responsible for front-end development, API integration and operations (maintenance, bugfixing and optimization)",
+      "Customized the UI/UX of the components to align with the host website.",
+      "Strong focus on TDD/BDD applications with ability to deploy on demand",
+      "Worked with CI/CD tools like Gitlab CI, ArgoCD, Jenkins etc.",
+    ],
+    date: "April 2023 - PRESENT",
+  },
+  {
+    id: 2,
     company: "Webmint",
     role: "Frontend Developer",
     work: [
@@ -90,7 +102,7 @@ export const WORK_LIST = [
       "Collaborated with the design and development teams to ensure a seamless user experience",
       "Implemented cross-browser compatibility to ensure the website works well in all modern browsers",
     ],
-    date: "2021 - PRESENT",
+    date: "November 2021 - March 2023",
   },
   {
     id: 1,
@@ -103,20 +115,20 @@ export const WORK_LIST = [
       "Implemented CSS animations and transitions.",
       "Implemented basic navigation on a website.",
     ],
-    date: "2020 - 2021",
+    date: "June 2020 - November 2021",
   },
-  // {
-  //   id: 2,
-  //   company: "DPWH",
-  //   role: "Civil Engineer",
-  //   work: [
-  //     "Create technical drawings and blueprints.",
-  //     "Analyze and solve design problems.",
-  //     "Collaborate with other engineers and architects.",
-  //     "Use software to create construction simulations and animations.",
-  //   ],
-  //   date: "2017 - 2020",
-  // },
+  {
+    id: 0,
+    company: "DPWH",
+    role: "Civil Engineer",
+    work: [
+      "Create technical drawings and blueprints.",
+      "Analyze and solve design problems.",
+      "Collaborate with other engineers and architects.",
+      "Use software to create construction simulations and animations.",
+    ],
+    date: "March 2017 - June 2020",
+  },
 ];
 
 export const SKILLS_DESC = [

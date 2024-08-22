@@ -115,7 +115,7 @@ export const WORK_LIST = [
       "Implemented CSS animations and transitions.",
       "Implemented basic navigation on a website.",
     ],
-    date: "June 2020 - November 2021",
+    date: "July 2021 - November 2021",
   },
   {
     id: 0,
@@ -127,7 +127,7 @@ export const WORK_LIST = [
       "Collaborate with other engineers and architects.",
       "Use software to create construction simulations and animations.",
     ],
-    date: "March 2017 - June 2020",
+    date: "February 2018 - June 2021",
   },
 ];
 

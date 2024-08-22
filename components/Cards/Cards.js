@@ -50,15 +50,15 @@ export const WorkCards = ({ work }) => {
 
 export const DeliverablesCard = ({ proj }) => {
   return (
-    <div className="relative w-3/4 lg:w-full mx-auto">
+    <div className="relative w-1/4 lg:w-full mx-auto">
       <div
         className="overflow-hidden overscroll-none rounded-[16px] shadow-[0px_1px_32px_7px_#131313] relative group"
         key={proj.id}
       >
-        <h2 className="absolute right-4 bottom-8 lg:right-12 text-[#FF8E5E] group-hover:hidden">
+        <h4 className="absolute right-4 bottom-8 lg:right-12 text-[#FF8E5E] group-hover:hidden">
           {proj.name}
-        </h2>
-        <div className="backdrop-blur-sm bg-black opacity-10 transition-all ease-linear hover:opacity-80 w-full overflow-x-hidden h-96">
+        </h4>
+        <div className="backdrop-blur-sm bg-black opacity-10 transition-all ease-linear hover:opacity-80 w-full overflow-hidden h-96">
           <img src={proj.image} alt={proj.name} draggable={false} />
         </div>
       </div>

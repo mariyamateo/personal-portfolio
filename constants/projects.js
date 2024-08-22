@@ -3,13 +3,13 @@ export const PROJECTS_LIST = [
     id: 0,
     image: "/images/png/projects/portfolio.webp",
     name: "My Portfolio",
-    link: "https://maclarissemateo.netlify.app/",
+    // link: "https://maclarissemateo.netlify.app/",
   },
   {
     id: 1,
     image: "/images/png/projects/sociopedia.webp",
     name: "Sociopedia",
-    link: "https://sociopedia-emvz.onrender.com/",
+    // link: "https://sociopedia-emvz.onrender.com/",
   },
   {
     id: 2,

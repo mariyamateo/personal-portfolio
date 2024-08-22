@@ -23,7 +23,7 @@ const Projects = () => {
         <h1>
           My <span className="text-[#FF8E5E]">deliverables</span>
         </h1>
-        <div className="grid lg:grid-cols-2 gap-12 pt-12">
+        <div className="grid lg:grid-cols-3 gap-12 pt-12">
           {PROJECTS_LIST.map((proj) => (
               <DeliverablesCard proj={proj} />
           ))}

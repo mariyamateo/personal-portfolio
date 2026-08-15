@@ -29,7 +29,7 @@ const Contact = ({ onClick }) => {
             caption={"Shoot me an email"}
           />
           <ContactButton
-            link={"https://www.linkedin.com/in/maclarisse-mateo/"}
+            link={"https://ph.linkedin.com/in/maclarissemateo"}
             image={"/images/svg/linkedin.gif"}
             caption={"Connect via LinkedIn"}
           />

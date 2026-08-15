@@ -11,13 +11,13 @@ export const NAVBAR_MENU = [
     key: "linkedin",
     name: "LinkedIn",
     imageDark: "/images/svg/linkedin-dark.svg",
-    link: "https://www.linkedin.com/in/maclarisse-mateo/",
+    link: "https://ph.linkedin.com/in/maclarissemateo",
   },
   {
     id: 2,
     key: "instagram",
     name: "Instagram",
     imageDark: "/images/svg/instagram.svg",
-    link: "https://www.instagram.com/engr.macky_/",
+    link: "https://www.instagram.com/engr.mackyyy_/",
   },
 ];

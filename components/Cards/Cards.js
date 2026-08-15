@@ -50,7 +50,7 @@ export const WorkCards = ({ work }) => {
 
 export const DeliverablesCard = ({ proj }) => {
   return (
-    <div className="relative w-1/4 lg:w-full mx-auto">
+    <div className="relative w-full mx-auto">
       <div
         className="overflow-hidden overscroll-none rounded-[16px] shadow-[0px_1px_32px_7px_#131313] relative group"
         key={proj.id}
